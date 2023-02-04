@@ -1,0 +1,61 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName myjavaapp3
+    blueprints []
+    buildTool maven
+    cacheProvider no
+    clientFramework react
+    clientPackageManager npm
+    clientTheme none
+    creationTimestamp 1675506082452
+    databaseType mongodb
+    devDatabaseType mongodb
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache false
+    enableSwaggerCodegen false
+    enableTranslation false
+    gradleEnterpriseHost ""
+    jhiPrefix jhi
+    jhipsterVersion "7.9.3"
+    jwtSecretKey "Y1U7JxMTfEdFAjDIA3KCe2bsU76YtG0XQE3lybcgw90Fg7dgZVx3RSXrBplhTWNqjrGrxfSwbfR4q7LO2kj0ccVaLfSt0zIxKnS8U4PanV0rr58iNTTVF68mqn3lOW+0wUP1u1jaMs07+cMqZp1QMj4JpXuAslrhemcLpyguXQ=="
+    languages [en, fr]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName com.codebridgecommunity.myjavaapp3
+    prodDatabaseType mongodb
+    reactive true
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    skipClient false
+    skipUserManagement false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+
+  entities Students, Classes
+}
+
+entity Students {
+  name String required
+  email String required unique
+  age Integer
+}
+entity Classes {
+  className String
+  time Instant
+  teacher String
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+

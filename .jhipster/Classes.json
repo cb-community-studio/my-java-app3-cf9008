@@ -1,0 +1,28 @@
+{
+  "applications": ["myjavaapp3"],
+  "changelogDate": "20230204093539",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "classes",
+  "fields": [
+    {
+      "fieldName": "className",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "time",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "teacher",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Classes",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
